@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddBooksController</servlet-name>
+        <servlet-class>com.webtools.assignment3_part7.AddBooksController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DBController</servlet-name>
+        <servlet-class>com.webtools.assignment3_part7.DBController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BooksDBController</servlet-name>
+        <servlet-class>com.webtools.assignment3_part7.BooksDBController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBooksController</servlet-name>
+        <url-pattern>/AddBooksController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BooksDBController</servlet-name>
+        <url-pattern>/BooksDBController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>/JSP/index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
