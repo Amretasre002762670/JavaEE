@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        CSV Form
+    </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container-fluid">
+    <div class="card" style="width:600px;margin:auto;margin-top:50px">
+        <h2 class="bg-danger card-header" style="color: white; text-align: center;"> Submit CSV file Form </h2>
+            <form name="Form" method="get" action="index.jsp">
+            <table>
+            <tr>
+                <td style="padding:10px;"><label for="csv_file_path">Upload your CSV File: </label></td>
+                <td style="padding:10px;"><input type="file" name="csv_file_path" id="csvServlet" /></td>
+            </tr>
+            <tr>
+                <td style="padding:10px;"><button type="submit" value="Submit" style="cursor: pointer;" class="btn btn-outline-success">Submit</button></td>
+            </tr>
+            </table>    
+            </form>
+    </div>
+</body>
+
+</html>
